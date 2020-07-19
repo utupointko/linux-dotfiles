@@ -1,0 +1,13 @@
+{
+  "name": "adapta-nokto",
+  "title": "AdaptaNokto",
+  "displayName": "AdaptaNokto",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "A great adapta-nokto theme.",
+  "license": "MIT",
+  "engines": {
+    "mailspring": "*"
+  }
+}
+
