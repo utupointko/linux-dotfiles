@@ -1,6 +1,4 @@
-esbenp.prettier-vscode
 fallenwood.vimL
-felixfbecker.php-intellisense
 icrawl.discord-vscode
 j-james.adapta-nokto-vscode
 James-Yu.latex-workshop
