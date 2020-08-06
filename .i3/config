@@ -63,14 +63,13 @@ exec --no-startup-id setxkbmap -layout us,kg && setxkbmap -option 'grp:alt_shift
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec $terminal -e 'bmenu'
-bindsym $mod+w exec --no-startup-id $browser
+bindsym $mod+Ctrl+b exec $terminal -e bmenu
+bindsym $mod+Ctrl+e exec --no-startup-id $terminal -e ranger
 bindsym $mod+e exec --no-startup-id $filemanager
+bindsym $mod+w exec --no-startup-id $browser
 bindsym $mod+b exec --no-startup-id blueman-manager
 bindsym $mod+v exec --no-startup-id code
 bindsym $mod+t exec --no-startup-id telegram-desktop
-# bindsym $mod+F3 exec ranger
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec $terminal -e 'mocp'
 bindsym $mod+Shift+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b

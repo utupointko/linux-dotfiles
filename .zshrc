@@ -23,9 +23,10 @@
 # paths
 export ZSH="/home/$USER/.oh-my-zsh"
 export PATH="/home/$USER/.bin/:$PATH"
-export EDITOR=/usr/bin/vim
 export BROWSER=/usr/bin/google-chrome-stable
 export TERMINAL=/usr/bin/tilix
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
 
 # themes
 ZSH_THEME="bira"
@@ -143,9 +144,9 @@ fs() { rifle "$(find -type f | fzf -e --reverse --prompt="Enter string > " --hea
 #==========================================================
 
 # shortcuts
-alias g="cd ~/github/"
 alias e="cd ~/elte/"
-alias p="cd ~/playground/"
+alias g="cd ~/github/"
+alias p="cd ~/github/playground/"
 
 # terminal
 alias cl="clear"
@@ -197,11 +198,11 @@ alias mylip="hostname -I"
 alias mymc="ifconfig -a | grep ether"
 
 # temp apps
-alias vpn="sudo openvpn --config /home/$USER/.arslan.ovpn"
 alias lyrics="py ~/.bin/lyrics.py"
 alias drive="py ~/.bin/drive.py"  
 alias aramis="ssh -L 2001:aramis.inf.elte.hu:1521 utupointko@caesar.elte.hu"
 alias siji="xfd -rows '19' -columns '34' -fn '-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1'"
+alias say='echo "$1" | espeak -s 120 2>/dev/null'
 #alias bmenu="bmenu"
 #alias ranger="ranger"
 #alias bashtop="bashtop"

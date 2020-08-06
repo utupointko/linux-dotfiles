@@ -39,6 +39,7 @@ b43-fwcutter
 babl
 bash
 bashrc-manjaro
+bashtop
 bauh
 bc
 binutils
@@ -50,6 +51,7 @@ bluez-libs
 bluez-utils
 bmenu
 boost-libs
+bridge-utils
 brotli
 btrfs-progs
 bubblewrap
@@ -74,7 +76,9 @@ colord-sane
 confuse
 conky
 conky-i3
+containerd
 coreutils
+cowsay
 cpupower
 cracklib
 crda
@@ -105,6 +109,7 @@ dmidecode
 dmraid
 dnsmasq
 dnssec-anchors
+docker
 dosfstools
 double-conversion
 downgrade
@@ -117,6 +122,7 @@ efivar
 elfutils
 enchant
 epdfview
+espeak
 exempi
 exfat-utils
 exiv2
@@ -847,7 +853,6 @@ python-setuptools
 python-six
 python-toml
 python-twisted
-python-ueberzug
 python-urllib3
 python-webencodings
 python-xapp
@@ -874,6 +879,7 @@ rsync
 rtkit
 rtmpdump
 run-parts
+runc
 rust
 rxvt-unicode
 rxvt-unicode-terminfo
@@ -954,6 +960,7 @@ ttf-liberation
 twolame
 tzdata
 udisks2
+ueberzug
 ufw
 upower
 urxvt-perls
@@ -1047,7 +1054,6 @@ xorg-xrdb
 xorg-xset
 xorgproto
 xsel
-xterm
 xvidcore
 xxhash
 xz

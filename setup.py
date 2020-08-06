@@ -54,6 +54,8 @@ def install_configs():
     run("dconf load /com/gexperts/Tilix/ < .config/tilix/config.dconf")
     run("cp .config/picom/picom.conf $HOME/.config")
     run("cp .config/ranger/rifle.conf $HOME/.config/ranger")
+    run("cp .config/dmenu/.dmenurc $HOME")
+    run("sudo cp .config/rofi/rofi-sensible-terminal /usr/bin")
     run("cp -r .i3 $HOME")
     run("sudo cp -r .other/fallout-grub-theme /boot/grub/themes")
     run("cp .vimrc $HOME")

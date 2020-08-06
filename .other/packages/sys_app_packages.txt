@@ -13,6 +13,7 @@ automake
 avahi
 b43-fwcutter
 bash
+bashtop
 bauh
 binutils
 bison
@@ -26,6 +27,7 @@ clion
 clipit
 cmatrix
 coreutils
+cowsay
 cpupower
 crda
 cronie
@@ -40,12 +42,14 @@ discord
 dmidecode
 dmraid
 dnsmasq
+docker
 dosfstools
 downgrade
 e2fsprogs
 ecryptfs-utils
 efibootmgr
 epdfview
+espeak
 exfat-utils
 f2fs-tools
 fakeroot
@@ -202,6 +206,8 @@ redshift
 reiserfsprogs
 rofi
 rsync
+rxvt-unicode
+rxvt-unicode-terminfo
 s-nail
 sbxkb
 screenfetch
@@ -236,6 +242,7 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 upower
+urxvt-perls
 usbutils
 util-linux
 vertex-maia-themes
@@ -273,7 +280,6 @@ xorg-xhost
 xorg-xinit
 xorg-xkill
 xorg-xprop
-xterm
 yay
 zensu
 zsh
