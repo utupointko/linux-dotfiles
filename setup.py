@@ -5,8 +5,8 @@ def run(command):
     return subprocess.call(command, shell=True)
 
 
-arch_packages = "firefox telegram-desktop discord vlc qbittorrent nautilus python-nautilus grub-customizer gucharmap tilix zsh rofi blueman pulseaudio-bluetooth pa-applet pavucontrol neofetch speedtest-cli xclip redshift noto-fonts-emoji"
-aur_packages = "google-chrome spotify spicetify-cli spotify-tui spotifyd-pulseaudio premid mailspring teams visual-studio-code-bin clion pycharm-professional i3-battery-popup-git"
+arch_packages = "firefox telegram-desktop discord freeoffice vlc qbittorrent nautilus python-nautilus grub-customizer gucharmap tilix zsh rofi blueman pulseaudio-bluetooth pa-applet pavucontrol neofetch speedtest-cli xclip redshift noto-fonts-emoji"
+aur_packages = "google-chrome bitwarden spotify spicetify-cli spotify-tui spotifyd-pulseaudio premid mailspring teams visual-studio-code-bin clion pycharm-professional i3-battery-popup-git"
 vscode_extensions = ["James-Yu.latex-workshop", "fallenwood.vimL", "icrawl.discord-vscode", "ms-python.python", "ms-vscode.cpptools", "ms-vsliveshare.vsliveshare", "ritwickdey.LiveServer", "vscode-icons-team.vscode-icons", "j-james.adapta-nokto-vscode"]
 
 
