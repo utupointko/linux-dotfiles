@@ -24,6 +24,7 @@ btrfs-progs
 bzip2
 cantarell-fonts
 clion
+clion-cmake
 clipit
 cmatrix
 coreutils
@@ -32,6 +33,7 @@ cpupower
 crda
 cronie
 cryptsetup
+datagrip
 deluge
 device-mapper
 dfc
@@ -58,12 +60,15 @@ ffmpegthumbnailer
 file
 filesystem
 findutils
+firefox
 flac
 flex
+freeoffice
 gawk
 gcc
 gcc-libs
 gcolor2
+gdb
 gettext
 gimp
 git
@@ -97,6 +102,7 @@ htop
 i3-battery-popup-git
 inetutils
 intel-ucode
+intellij-idea-ultimate-edition
 inxi
 iproute2
 iptables
@@ -169,7 +175,9 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
+nodejs
 noto-fonts-emoji
+npm
 nss-mdns
 ntfs-3g
 ntp
@@ -219,7 +227,7 @@ speedtest-cli
 spicetify-cli
 spotify
 spotify-tui
-spotifyd-pulseaudio
+spotifyd
 subversion
 sudo
 sysfsutils
@@ -241,6 +249,8 @@ ttf-droid
 ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
+umbrello
+unzip
 upower
 urxvt-perls
 usbutils
@@ -250,6 +260,8 @@ vi
 vibrancy-icons-teal
 viewnior
 vim
+virtualbox
+virtualbox-ext-oracle
 visual-studio-code-bin
 vlc
 volumeicon
@@ -257,6 +269,7 @@ w3m
 wallpapers-juhraya
 wget
 which
+wmctrl
 wmutils
 wpa_supplicant
 xarchiver

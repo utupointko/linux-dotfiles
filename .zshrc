@@ -136,8 +136,36 @@ export LANG=en_US.UTF-8
 # disable BIOS beep
 xset -b
 
-# file Search
+# file search
 fs() { rifle "$(find -type f | fzf -e --reverse --prompt="Enter string > " --header="ESC to quit. ")" }
+
+# switch playback audio
+pa-list() { pacmd list-sinks | awk '/index/ || /name:/' ;}
+pa-set() { 
+	# list all apps in playback tab (ex: cmus, mplayer, vlc)
+	inputs=($(pacmd list-sink-inputs | awk '/index/ {print $2}')) 
+	# set the default output device
+	pacmd set-default-sink $1 &> /dev/null
+	# apply the changes to all running apps to use the new output device
+	for i in ${inputs[*]}; do pacmd move-sink-input $i $1 &> /dev/null; done
+}
+pa-playbacklist() { 
+	# list individual apps
+	echo "==============="
+	echo "Running Apps"
+	pacmd list-sink-inputs | awk '/index/ || /application.name /'
+
+	# list all sound device
+	echo "==============="
+	echo "Sound Devices"
+	pacmd list-sinks | awk '/index/ || /name:/'
+}
+pa-playbackset() { 
+	# set the default output device
+	pacmd set-default-sink "$2" &> /dev/null
+	# apply changes to one running app to use the new output device
+	pacmd move-sink-input "$1" "$2" &> /dev/null
+}
 
 #==========================================================
 # ALIASES / SHORTCUTS
@@ -159,6 +187,7 @@ alias grep="grep -i --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}"
 alias c="xclip -selection clipboard"
 alias orphans="pacman -Qtdq"
 alias ro="sudo pacman -Rns $(pacman -Qtdq)"
+alias clean="rm -rf .cache/yay/* ; rm -rf .local/share/Trash/files/*"
 
 # config files
 alias bashc="vim ~/.bashrc"
@@ -189,6 +218,13 @@ alias wconnect="nmcli -ask  dev wifi connect"
 alias wconnect802="sudo nmcli c --ask up"
 alias wdisconnect="nmcli con down id"
 alias wdisconnect802="sudo nmcli c --ask down"
+
+alias dns='cat /etc/resolv.conf'
+alias dns-adguard1='sudo sh -c "echo nameserver 176.103.130.130 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nADGUARD DEFAULT (adblock)\n176.103.130.130"'
+alias dns-adguard2='sudo sh -c "echo nameserver 176.103.130.132 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nADFUARD FAMILY (adblock + porn)\n176.103.130.132"'
+alias dns-cloudflare='sudo sh -c "echo nameserver 1.1.1.1 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nCLOUDFLARE (FAST)\n1.1.1.1"'
+alias dns-google='sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nGOOGLE (STABLE)\n8.8.8.8"'
+alias dns-yandex='sudo sh -c "echo nameserver 77.88.8.8 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nYANDEX (FAST + STABLE)\n77.88.8.8"'
 
 # devices
 alias mypref="neofetch"
