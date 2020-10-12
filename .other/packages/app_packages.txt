@@ -4,6 +4,7 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 amd-ucode
+apparmor
 arandr
 b43-fwcutter
 bashtop
@@ -117,6 +118,7 @@ visual-studio-code-bin
 vlc
 volumeicon
 wallpapers-juhraya
+webstorm
 xarchiver
 xautolock
 xclip

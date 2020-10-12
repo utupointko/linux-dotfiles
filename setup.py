@@ -6,7 +6,7 @@ def run(command):
 
 
 arch_packages = "firefox telegram-desktop discord freeoffice vlc qbittorrent nautilus python-nautilus grub-customizer gucharmap tilix zsh rofi blueman pulseaudio-bluetooth pa-applet pavucontrol neofetch speedtest-cli wmctrl xclip redshift noto-fonts-emoji"
-aur_packages = "google-chrome-stable spotify spicetify-cli spotify-tui spotifyd  mailspring teams visual-studio-code-bin clion pycharm-professional intellij-idea-ultimate-edition datagrip i3-battery-popup-git"
+aur_packages = "google-chrome-stable spotify spicetify-cli spotify-tui spotifyd  mailspring teams visual-studio-code-bin clion pycharm-professional intellij-idea-ultimate-edition webstorm datagrip i3-battery-popup-git"
 vscode_extensions = ["James-Yu.latex-workshop", "fallenwood.vimL", "icrawl.discord-vscode", "ms-python.python", "ms-vscode.cpptools", "ms-vsliveshare.vsliveshare", "ritwickdey.LiveServer", "vscode-icons-team.vscode-icons", "j-james.adapta-nokto-vscode"]
 
 

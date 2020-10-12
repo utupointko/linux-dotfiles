@@ -179,7 +179,7 @@ alias p="cd ~/github/playground/"
 # terminal
 alias cl="clear"
 alias py="python3"
-alias cp="cp -i"                 
+alias cp="cp -iv"
 alias df="df -h"
 alias free="free -m"
 alias more="less"
@@ -234,6 +234,7 @@ alias mylip="hostname -I"
 alias mymc="ifconfig -a | grep ether"
 
 # temp apps
+alias temp="sh ~/.bin/temp.sh"
 alias lyrics="py ~/.bin/lyrics.py"
 alias drive="py ~/.bin/drive.py"  
 alias aramis="ssh -L 2001:aramis.inf.elte.hu:1521 utupointko@caesar.elte.hu"

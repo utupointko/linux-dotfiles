@@ -221,7 +221,6 @@ sbxkb
 screenfetch
 sed
 shadow
-snapd
 spectre-meltdown-checker
 speedtest-cli
 spicetify-cli
@@ -267,6 +266,7 @@ vlc
 volumeicon
 w3m
 wallpapers-juhraya
+webstorm
 wget
 which
 wmctrl

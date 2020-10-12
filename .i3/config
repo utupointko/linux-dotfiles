@@ -25,7 +25,7 @@ set $alt Mod1
 set $mod Mod4
 
 # applicaiton variables
-set $browser google-chrome-stable
+set $browser firefox
 set $filemanager nautilus
 set $terminal tilix
 
@@ -323,9 +323,9 @@ bindsym Print mode "$screenshot"
 set $screenshot (f)ull, (w)indow, (s)elect
 mode "$screenshot" {
 
-    bindsym f exec --no-startup-id i3-scrot -q 100
-    bindsym w --release exec --no-startup-id i3-scrot -w -q 100
-    bindsym s --release exec --no-startup-id i3-scrot -s -q 100
+    bindsym f exec --no-startup-id i3-scrot
+    bindsym w --release exec --no-startup-id i3-scrot -w
+    bindsym s --release exec --no-startup-id i3-scrot -s
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"

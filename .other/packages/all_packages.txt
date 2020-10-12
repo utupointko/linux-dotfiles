@@ -298,7 +298,6 @@ jdk-openjdk
 jfsutils
 jre-openjdk
 jre-openjdk-headless
-js60
 js68
 json-c
 json-glib
@@ -968,7 +967,6 @@ shadow
 shared-mime-info
 slang
 smbclient
-snapd
 snappy
 solid
 sonnet
@@ -988,7 +986,6 @@ spotify
 spotify-tui
 spotifyd
 sqlite
-squashfs-tools
 sratom
 srt
 startup-notification
@@ -1072,6 +1069,7 @@ wayland
 wayland-protocols
 webkit2gtk
 webrtc-audio-processing
+webstorm
 wget
 which
 wildmidi
