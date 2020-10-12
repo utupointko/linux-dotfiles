@@ -3,19 +3,19 @@
 message="
 Usage: temp [OPTION]
 
-Mandatory arguments:  -l    list all temporary directories
-                      -c    create a temporary directory
-                      "
+Mandatory arguments:  -l or list        list all temporary directories
+                      -c or create      create a temporary directory
+"
 
 while [ -n "$1" ]; do
 
     case "$1" in
 
-        -l) 
-            ls -d /tmp/ci-* 
+        -l | list) 
+            ls -d /tmp/code-* 
             break ;;
-        -d) 
-            tmp_dir=$(mktemp -d -t ci-$(date +%Y-%m-%d-%H-%M-%S)-XXXXXXXXXX)
+        -d | create ) 
+            tmp_dir=$(mktemp -d -t code-$(date +%Y-%m-%d-%H-%M-%S)-XXXXXXXXXX)
             code $tmp_dir 
             break ;;
             
