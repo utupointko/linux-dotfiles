@@ -43,6 +43,7 @@ bashrc-manjaro
 bashtop
 bauh
 bc
+bcg729
 binutils
 bison
 blas
@@ -482,6 +483,7 @@ liblqr
 liblrdf
 libmad
 libmatroska
+libmaxminddb
 libmbim
 libmediainfo
 libmfx
@@ -1075,6 +1077,8 @@ which
 wildmidi
 wireless-regdb
 wireless_tools
+wireshark-cli
+wireshark-qt
 wmctrl
 wmutils
 woff2

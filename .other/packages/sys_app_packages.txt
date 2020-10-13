@@ -269,6 +269,7 @@ wallpapers-juhraya
 webstorm
 wget
 which
+wireshark-qt
 wmctrl
 wmutils
 wpa_supplicant

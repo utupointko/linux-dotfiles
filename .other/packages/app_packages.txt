@@ -119,6 +119,7 @@ vlc
 volumeicon
 wallpapers-juhraya
 webstorm
+wireshark-qt
 xarchiver
 xautolock
 xclip

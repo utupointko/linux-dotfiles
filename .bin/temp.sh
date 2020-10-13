@@ -58,11 +58,13 @@ $(ColorBlue 'Choose an option:')
 # Functions
 ##
 function list() {
-    if [ -d /tmp/dir-* ]; then
-        ls -d /tmp/dir-* ;
-    else
-        printf '\nThere is no any temporary directory!\n\n'
-    fi
+    for d in /tmp/dir-*; do
+        if [ $d != "/tmp/dir-*" ]; then
+            echo $d
+        else
+            echo "There is no any temporary directory!"
+        fi
+    done
 }
 
 function create_and_open_with() {
@@ -71,7 +73,7 @@ function create_and_open_with() {
     read a
     case $a in
         1) code $tmp_dir ;;
-	    2) intellij-idea-ultimate-edition $tmp_dir ;;
+	    2) nohup intellij-idea-ultimate-edition $tmp_dir ;;
         0) clean; exit 0 ;;
 		*) clean; rmdir $tmp_dir ;;
     esac
@@ -79,11 +81,13 @@ function create_and_open_with() {
 }
 
 function delete() {
-    if [ -d /tmp/dir-* ]; then
-        rm -r /tmp/dir-*;
-    else
-        printf '\nThere is no any temporary directory!\n\n'
-    fi
+    for d in /tmp/dir-*; do
+        if [ $d != "/tmp/dir-*" ]; then
+            rm -r $d;
+        else
+            echo "There is no any temporary directory!"
+        fi
+    done
 }
 
 # Print help message if arguments are not given
