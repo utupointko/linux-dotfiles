@@ -235,6 +235,7 @@ alias mymc="ifconfig -a | grep ether"
 
 # temp apps
 alias temp="sh ~/.bin/temp.sh"
+alias sage-start="docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter"
 alias lyrics="py ~/.bin/lyrics.py"
 alias drive="py ~/.bin/drive.py"  
 alias aramis="ssh -L 2001:aramis.inf.elte.hu:1521 utupointko@caesar.elte.hu"

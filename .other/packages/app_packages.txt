@@ -14,6 +14,7 @@ bluez-utils
 bmenu
 clion
 clipit
+code-nautilus-git
 cowsay
 cronie
 datagrip
@@ -62,6 +63,7 @@ manjaro-system
 manjaro-zsh-config
 markdown_previewer
 memtest86+
+microsoft-edge-dev
 minecraft-launcher
 mkinitcpio-openswap
 moc
@@ -102,6 +104,7 @@ syslog-ng
 systemd-fsck-silent
 teams
 telegram-desktop
+termdown
 terminus-font
 tilix
 tlp
@@ -114,7 +117,6 @@ vi
 vibrancy-icons-teal
 viewnior
 virtualbox-ext-oracle
-visual-studio-code-bin
 vlc
 volumeicon
 wallpapers-juhraya

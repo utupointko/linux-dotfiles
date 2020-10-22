@@ -1,7 +1,6 @@
 DavidAnson.vscode-markdownlint
-esbenp.prettier-vscode
 fallenwood.vimL
-icrawl.discord-vscode
+HookyQR.beautify
 j-james.adapta-nokto-vscode
 James-Yu.latex-workshop
 ms-python.python

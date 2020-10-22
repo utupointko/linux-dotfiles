@@ -27,6 +27,7 @@ clion
 clion-cmake
 clipit
 cmatrix
+code-nautilus-git
 coreutils
 cowsay
 cpupower
@@ -155,6 +156,7 @@ memtest86+
 mesa-demos
 mhwd
 mhwd-db
+microsoft-edge-dev
 minecraft-launcher
 mkinitcpio-openswap
 mlocate
@@ -236,6 +238,7 @@ systemd-sysvcompat
 tar
 teams
 telegram-desktop
+termdown
 terminus-font
 texinfo
 tilix
