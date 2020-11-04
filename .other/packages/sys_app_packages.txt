@@ -156,7 +156,7 @@ memtest86+
 mesa-demos
 mhwd
 mhwd-db
-microsoft-edge-dev
+microsoft-office-web-jak
 minecraft-launcher
 mkinitcpio-openswap
 mlocate
@@ -229,6 +229,7 @@ spicetify-cli
 spotify
 spotify-tui
 spotifyd
+staruml
 subversion
 sudo
 sysfsutils
@@ -242,6 +243,7 @@ termdown
 terminus-font
 texinfo
 tilix
+timeset
 tlp
 translate-shell
 tree
@@ -276,6 +278,7 @@ wireshark-qt
 wmctrl
 wmutils
 wpa_supplicant
+x11-ssh-askpass
 xarchiver
 xautolock
 xclip

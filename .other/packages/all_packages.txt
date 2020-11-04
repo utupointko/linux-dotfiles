@@ -698,7 +698,7 @@ mhwd-nvidia-435xx
 mhwd-nvidia-440xx
 mhwd-nvidia-450xx
 mhwd-nvidia-455xx
-microsoft-edge-dev
+microsoft-office-web-jak
 minecraft-launcher
 minizip
 mjpegtools
@@ -883,6 +883,7 @@ python-html5lib
 python-hyperlink
 python-idna
 python-incremental
+python-jade-application-kit
 python-jedi
 python-lxml
 python-mako
@@ -914,6 +915,7 @@ python-pyopenssl
 python-pyparsing
 python-pyqt5
 python-pyqt5-sip
+python-pyqtwebengine
 python-pysmbc
 python-pyxdg
 python-rencode
@@ -1016,6 +1018,7 @@ sqlite
 sratom
 srt
 startup-notification
+staruml
 stoken
 subversion
 sudo
@@ -1043,6 +1046,7 @@ thin-provisioning-tools
 threadweaver
 tidy
 tilix
+timeset
 tlp
 totem-pl-parser
 tracker
@@ -1110,6 +1114,7 @@ wmutils
 woff2
 wpa_supplicant
 wpebackend-fdo
+x11-ssh-askpass
 x264
 x265
 xarchiver

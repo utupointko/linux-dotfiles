@@ -63,7 +63,7 @@ manjaro-system
 manjaro-zsh-config
 markdown_previewer
 memtest86+
-microsoft-edge-dev
+microsoft-office-web-jak
 minecraft-launcher
 mkinitcpio-openswap
 moc
@@ -78,7 +78,6 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
-ntp
 nvidia-prime
 pa-applet
 pamac-gtk
@@ -100,6 +99,7 @@ spicetify-cli
 spotify
 spotify-tui
 spotifyd
+staruml
 syslog-ng
 systemd-fsck-silent
 teams
@@ -107,6 +107,7 @@ telegram-desktop
 termdown
 terminus-font
 tilix
+timeset
 tlp
 translate-shell
 ttf-inconsolata

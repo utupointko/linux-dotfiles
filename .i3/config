@@ -508,6 +508,10 @@ for_window [class="simplemc.q"] floating enable
 for_window [instance="www.icloud.com__notes"] floating enable move to scratchpad
 for_window [instance="www.icloud.com__reminders"] floating enable move to scratchpad
 for_window [instance="www.icloud.com__calendar"] floating enable move to scratchpad
+for_window [class="sudoku-Sudoku"] floating enable border normal
+for_window [class="tictactoe-TicTacToe"] floating enable border normal
+for_window [class="clickcounter-ClickCounter"] floating enable border normal
+for_window [class="connectfour-ConnectFour"] floating enable border normal
 
 #==========================================================
 # STARTUP APPLICATIONS

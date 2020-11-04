@@ -227,7 +227,7 @@ alias dns-google='sudo sh -c "echo nameserver 8.8.8.8 > /etc/resolv.conf"; echo 
 alias dns-yandex='sudo sh -c "echo nameserver 77.88.8.8 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nYANDEX (FAST + STABLE)\n77.88.8.8"'
 
 # devices
-alias mypref="neofetch"
+alias mypref="inxi -Fxz"
 alias mydev="lsusb; ifconfig"
 alias mypip="curl ifconfig.me"
 alias mylip="hostname -I"
@@ -235,6 +235,7 @@ alias mymc="ifconfig -a | grep ether"
 
 # temp apps
 alias temp="sh ~/.bin/temp.sh"
+alias btooth="sh ~/.bin/btooth.sh"
 alias sage-start="docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter"
 alias lyrics="py ~/.bin/lyrics.py"
 alias drive="py ~/.bin/drive.py"  
