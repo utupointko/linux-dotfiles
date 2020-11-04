@@ -49,19 +49,23 @@ while [ -n "$1" ]; do
             bluetoothctl -- trust $device
             bluetoothctl -- connect $device
             sleep 5
+            notify-send 'Paired'
             break ;;
 
         -c | connect ) 
             bluetoothctl -- connect $device
+            notify-send 'Connected'
             break ;;
             
         -d | disconnect )
             bluetoothctl -- disconnect
+            notify-send 'Disconnected'
             break ;;
         
         -r | reconnect )
             bluetoothctl -- disconnect
             bluetoothctl -- connect $device
+            notify-send 'Reconnected'
             break ;;
 
         -h | --help )
