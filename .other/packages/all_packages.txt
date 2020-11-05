@@ -7,6 +7,7 @@ acpid
 adapta-maia-theme
 adobe-source-code-pro-fonts
 adwaita-icon-theme
+alsa-card-profiles
 alsa-firmware
 alsa-lib
 alsa-plugins
@@ -25,6 +26,7 @@ archlinux-keyring
 argon2
 aribb24
 artwork-i3
+asciidoc
 at-spi2-atk
 at-spi2-core
 atk
@@ -115,6 +117,8 @@ dmidecode
 dmraid
 dnsmasq
 dnssec-anchors
+docbook-xml
+docbook-xsl
 docker
 dosfstools
 double-conversion
@@ -301,7 +305,7 @@ jdk-openjdk
 jfsutils
 jre-openjdk
 jre-openjdk-headless
-js68
+js78
 json-c
 json-glib
 karchive
@@ -356,19 +360,29 @@ ldns
 lensfun
 less
 lib32-bzip2
+lib32-curl
+lib32-e2fsprogs
 lib32-expat
 lib32-gcc-libs
 lib32-glibc
 lib32-icu
+lib32-keyutils
+lib32-krb5
 lib32-libdrm
 lib32-libelf
 lib32-libffi
 lib32-libglvnd
+lib32-libidn2
+lib32-libldap
 lib32-libpciaccess
+lib32-libpsl
+lib32-libssh2
+lib32-libunistring
 lib32-libunwind
 lib32-libx11
 lib32-libxau
 lib32-libxcb
+lib32-libxcrypt
 lib32-libxdamage
 lib32-libxdmcp
 lib32-libxext
@@ -382,7 +396,9 @@ lib32-lz4
 lib32-mesa
 lib32-ncurses
 lib32-nvidia-440xx-utils
+lib32-openssl
 lib32-readline
+lib32-util-linux
 lib32-wayland
 lib32-xz
 lib32-zlib
@@ -412,6 +428,7 @@ libcap-ng
 libcddb
 libcdio
 libcdio-paranoia
+libcloudproviders
 libconfig
 libcroco
 libcue
@@ -761,7 +778,6 @@ openresolv
 openssh
 openssl
 openvpn
-opera-ffmpeg-codecs
 opus
 orc
 os-prober
@@ -853,7 +869,6 @@ psmisc
 pulseaudio
 pulseaudio-bluetooth
 pycharm-professional
-pygobject-devel
 python
 python-appdirs
 python-asn1crypto
@@ -1018,7 +1033,6 @@ sqlite
 sratom
 srt
 startup-notification
-staruml
 stoken
 subversion
 sudo
@@ -1049,8 +1063,8 @@ tilix
 timeset
 tlp
 totem-pl-parser
-tracker
-tracker-miners
+tracker3
+tracker3-miners
 translate-shell
 tree
 tslib

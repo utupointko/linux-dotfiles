@@ -229,7 +229,6 @@ spicetify-cli
 spotify
 spotify-tui
 spotifyd
-staruml
 subversion
 sudo
 sysfsutils

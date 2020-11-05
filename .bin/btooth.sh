@@ -48,7 +48,7 @@ while [ -n "$1" ]; do
             sleep 10
             bluetoothctl -- trust $device
             bluetoothctl -- connect $device
-            sleep 5
+            sleep 2
             notify-send 'Paired'
             break ;;
 
@@ -65,6 +65,7 @@ while [ -n "$1" ]; do
         -r | reconnect )
             bluetoothctl -- disconnect
             bluetoothctl -- connect $device
+            sleep 2
             notify-send 'Reconnected'
             break ;;
 

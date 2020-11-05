@@ -37,6 +37,7 @@ gufw
 hexchat
 htop
 i3-battery-popup-git
+inetutils
 intel-ucode
 intellij-idea-ultimate-edition
 iputils
@@ -99,7 +100,6 @@ spicetify-cli
 spotify
 spotify-tui
 spotifyd
-staruml
 syslog-ng
 systemd-fsck-silent
 teams
