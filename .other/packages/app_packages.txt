@@ -22,6 +22,7 @@ deluge
 dfc
 docker
 ecryptfs-utils
+edex-ui
 epdfview
 ffmpegthumbnailer
 firefox

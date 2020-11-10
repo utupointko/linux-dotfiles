@@ -50,6 +50,7 @@ dosfstools
 downgrade
 e2fsprogs
 ecryptfs-utils
+edex-ui
 efibootmgr
 epdfview
 espeak
@@ -177,7 +178,6 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
-nodejs
 noto-fonts-emoji
 npm
 nss-mdns

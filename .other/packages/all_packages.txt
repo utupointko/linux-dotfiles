@@ -127,6 +127,7 @@ dunst
 dunstify
 e2fsprogs
 ecryptfs-utils
+edex-ui
 editorconfig-core-c
 efibootmgr
 efivar
@@ -755,7 +756,7 @@ ninja
 nitrogen
 nm-connection-editor
 node-gyp
-nodejs
+nodejs-lts-dubnium
 noto-fonts
 noto-fonts-emoji
 npm

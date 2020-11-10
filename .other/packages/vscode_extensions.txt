@@ -1,3 +1,4 @@
+bmewburn.vscode-intelephense-client
 DavidAnson.vscode-markdownlint
 fallenwood.vimL
 HookyQR.beautify

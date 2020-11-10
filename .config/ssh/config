@@ -1,0 +1,12 @@
+Host gcp
+  HostName 34.65.29.174
+  User arslan
+Host caesar
+  HostName caesar.elte.hu
+  User utupointko
+Host pandora
+  HostName pandora.inf.elte.hu
+  User h6r3em
+Host webprog
+  HostName webprogramozas.inf.elte.hu
+  User h6r3em
