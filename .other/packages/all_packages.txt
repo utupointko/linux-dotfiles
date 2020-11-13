@@ -564,6 +564,7 @@ libsecret
 libshout
 libsidplay
 libsigc++
+libsigsegv
 libsm
 libsndfile
 libsodium
@@ -574,6 +575,7 @@ libsrtp
 libssh
 libssh2
 libstemmer
+libsynctex
 libtar
 libtasn1
 libteam
@@ -720,6 +722,7 @@ microsoft-office-web-jak
 minecraft-launcher
 minizip
 mjpegtools
+mk_vpp
 mkinitcpio
 mkinitcpio-busybox
 mkinitcpio-openswap
@@ -861,6 +864,7 @@ poppler-data
 poppler-glib
 popt
 portaudio
+potrace
 powertop
 ppp
 pptpclient
@@ -1046,6 +1050,7 @@ systemd
 systemd-fsck-silent
 systemd-libs
 systemd-sysvcompat
+t1lib
 taglib
 talloc
 tar
@@ -1057,6 +1062,8 @@ termdown
 terminus-font
 tevent
 texinfo
+texlive-bin
+texlive-core
 thin-provisioning-tools
 threadweaver
 tidy
@@ -1202,3 +1209,4 @@ zsh-syntax-highlighting
 zstd
 zvbi
 zxing-cpp
+zziplib

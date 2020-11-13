@@ -159,6 +159,7 @@ mhwd
 mhwd-db
 microsoft-office-web-jak
 minecraft-launcher
+mk_vpp
 mkinitcpio-openswap
 mlocate
 mobile-broadband-provider-info

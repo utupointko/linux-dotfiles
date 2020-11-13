@@ -5,6 +5,7 @@ HookyQR.beautify
 j-james.adapta-nokto-vscode
 James-Yu.latex-workshop
 ms-python.python
+ms-toolsai.jupyter
 ms-vscode.cpptools
 ms-vsliveshare.vsliveshare
 redhat.java

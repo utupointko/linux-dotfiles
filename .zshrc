@@ -236,10 +236,10 @@ alias mymc="ifconfig -a | grep ether"
 # temp apps
 alias temp="sh ~/.bin/temp.sh"
 alias btooth="sh ~/.bin/btooth.sh"
-alias sage-start="docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter"
 alias lyrics="py ~/.bin/lyrics.py"
 alias drive="py ~/.bin/drive.py"  
 alias aramis="ssh -L 2001:aramis.inf.elte.hu:1521 utupointko@caesar.elte.hu"
+alias sage-start="docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter"
 alias siji="xfd -rows '19' -columns '34' -fn '-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1'"
 alias say='echo "$1" | espeak -s 120 2>/dev/null'
 #alias bmenu="bmenu"

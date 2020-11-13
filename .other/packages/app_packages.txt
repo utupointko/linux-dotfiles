@@ -67,6 +67,7 @@ markdown_previewer
 memtest86+
 microsoft-office-web-jak
 minecraft-launcher
+mk_vpp
 mkinitcpio-openswap
 moc
 morc_menu
