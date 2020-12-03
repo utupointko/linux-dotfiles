@@ -50,13 +50,13 @@ dosfstools
 downgrade
 e2fsprogs
 ecryptfs-utils
-edex-ui
 efibootmgr
 epdfview
 espeak
 exfat-utils
 f2fs-tools
 fakeroot
+feh
 ffmpeg
 ffmpegthumbnailer
 file
@@ -158,7 +158,6 @@ mesa-demos
 mhwd
 mhwd-db
 microsoft-office-web-jak
-minecraft-launcher
 mk_vpp
 mkinitcpio-openswap
 mlocate

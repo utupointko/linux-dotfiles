@@ -24,6 +24,7 @@ def backup_configs():
     run("cp $HOME/.config/picom.conf .config/picom")
     run("cp $HOME/.config/ranger/rifle.conf .config/ranger")
     run("cp $HOME/.dmenurc .config/dmenu")
+    run("cp $HOME/.config/dunst/dunstrc .config/dunst")
     run("cp $HOME/.ssh/config .config/ssh")
 
 def backup_i3():

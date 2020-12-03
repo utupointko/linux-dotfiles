@@ -127,7 +127,6 @@ dunst
 dunstify
 e2fsprogs
 ecryptfs-utils
-edex-ui
 editorconfig-core-c
 efibootmgr
 efivar
@@ -145,6 +144,7 @@ f2fs-tools
 faac
 faad2
 fakeroot
+feh
 ffmpeg
 ffmpegthumbnailer
 fftw
@@ -243,7 +243,6 @@ gtksourceview3
 gucharmap
 gufw
 guile
-guile2.0
 gupnp
 gupnp-dlna
 gupnp-igd
@@ -719,7 +718,6 @@ mhwd-nvidia-440xx
 mhwd-nvidia-450xx
 mhwd-nvidia-455xx
 microsoft-office-web-jak
-minecraft-launcher
 minizip
 mjpegtools
 mk_vpp
@@ -874,6 +872,7 @@ psmisc
 pulseaudio
 pulseaudio-bluetooth
 pycharm-professional
+pyside2
 python
 python-appdirs
 python-asn1crypto
@@ -946,6 +945,7 @@ python-retrying
 python-service-identity
 python-setproctitle
 python-setuptools
+python-shiboken2
 python-six
 python-toml
 python-traitlets
@@ -1121,6 +1121,7 @@ wallpapers-juhraya
 wavpack
 wayland
 wayland-protocols
+web-installer-url-handler
 webkit2gtk
 webrtc-audio-processing
 webstorm

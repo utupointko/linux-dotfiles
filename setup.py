@@ -55,6 +55,7 @@ def install_configs():
     run("cp .config/picom/picom.conf $HOME/.config")
     run("cp .config/ranger/rifle.conf $HOME/.config/ranger")
     run("cp .config/dmenu/.dmenurc $HOME")
+    run("cp .config/dunst/dunstrc $HOME/config/dunst")
     run("sudo cp .config/rofi/rofi-sensible-terminal /usr/bin")
     run("cp .config/ssh/config $HOME/.ssh")
     run("cp -r .config/i3/* $HOME/.i3")

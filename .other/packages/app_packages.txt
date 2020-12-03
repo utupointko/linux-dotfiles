@@ -22,7 +22,6 @@ deluge
 dfc
 docker
 ecryptfs-utils
-edex-ui
 epdfview
 ffmpegthumbnailer
 firefox
@@ -66,7 +65,6 @@ manjaro-zsh-config
 markdown_previewer
 memtest86+
 microsoft-office-web-jak
-minecraft-launcher
 mk_vpp
 mkinitcpio-openswap
 moc
@@ -83,7 +81,6 @@ networkmanager-vpnc
 nfs-utils
 nvidia-prime
 pa-applet
-pamac-gtk
 patchutils
 pavucontrol
 polkit-gnome

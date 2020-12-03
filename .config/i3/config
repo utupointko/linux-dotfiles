@@ -71,8 +71,8 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+q kill
 
 # toogle redshift
-bindsym $mod+Shift+n exec redshift -O 3000 
-bindsym $mod+Shift+m exec redshift -x
+bindsym $mod+KP_Multiply exec --no-startup-id redshift -O 3000 && fix_cursor
+bindsym $mod+KP_Subtract exec --no-startup-id redshift -x && fix_cursor
 
 # reload the configuration file
 bindsym $mod+c reload
@@ -229,10 +229,10 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bar {
 	i3bar_command i3bar
 	status_command i3status -c $HOME/.i3/i3status.conf
-	position bottom
+	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-        tray_output primary
+    tray_output primary
 #	tray_output eDP1
 
 	bindsym button4 nop
@@ -395,11 +395,11 @@ gaps outer -2
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-smart_gaps on
+  smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+  smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -544,7 +544,7 @@ exec --no-startup-id mailspring
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id $HOME/.config/conky/start_conky.sh
+# exec --no-startup-id $HOME/.config/conky/start_conky.sh
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id xautolock -time 10 -locker blurlock
@@ -555,6 +555,7 @@ exec --no-startup-id i3-battery-popup -n -s $HOME/.bin/battery-sound.wav
 # APPLICATIONS LAUNCHER BINDINDS
 #==========================================================
 
+bindsym $mod+KP_Add exec --no-startup-id feh --recursive --bg-fill --randomize $HOME/Pictures/Wallpapers && fix_cursor
 bindsym $mod+d exec --no-startup-id dmenu_recency
 bindsym $mod+space exec rofi -combi-modi window -show drun -modi combi -show-icons -theme Adapta-Nokto
 bindsym $alt+Tab exec rofi -combi-modi drun -show window -modi combi -show-icons -theme Adapta-Nokto
