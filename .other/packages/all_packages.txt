@@ -1167,6 +1167,8 @@ xfce4-power-manager
 xfconf
 xfsprogs
 xkeyboard-config
+xorg-bdftopcf
+xorg-font-util
 xorg-fonts-alias-misc
 xorg-fonts-encodings
 xorg-fonts-misc

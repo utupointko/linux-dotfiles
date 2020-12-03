@@ -41,6 +41,11 @@ def install_bin():
     run("cp -r .bin $HOME")
 
 
+def install_fonts():
+    run("cp .config/other/fonts $HOME/.local/share")
+    run("fc-cache -f -v")
+
+
 def install_configs():
     run("cp -r .config/conky $HOME/.config")
     run("cp -r .config/fontconfig $HOME/.config")
@@ -72,6 +77,7 @@ if __name__ == "__main__":
     # install_vim_plug()
     # fix_time()
     # install_bin()
+    # install_fonts()
     # install_configs()
 
     print("\nIntallation has finished!\n")
