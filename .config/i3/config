@@ -287,11 +287,11 @@ bindsym $mod+h mode "$monitor"
 set $monitor (p)rimary, (e)xternal, (d)ual
 mode "$monitor" {
     # turn on only primary monitor
-    bindsym p exec xrandr --output eDP-1 --auto --output DP-1 --off
+    bindsym p exec --no-startup-id xrandr --output eDP-1 --auto --output DP-1 --off && fix_cursor
     # turn on only external monitor
-    bindsym e exec xrandr --output eDP-1 --off --output DP-1 --auto
+    bindsym e exec --no-startup-id xrandr --output eDP-1 --off --output DP-1 --auto && fix_cursor
     # turn on dual-monitor mode
-    bindsym d exec xrandr --output eDP-1 --auto --output DP-1 --auto --right-of eDP-1
+    bindsym d exec --no-startup-id xrandr --output eDP-1 --auto --output DP-1 --auto --right-of eDP-1 && fix_cursor
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
@@ -556,7 +556,7 @@ exec --no-startup-id i3-battery-popup -n -s $HOME/.bin/battery-sound.wav
 # APPLICATIONS LAUNCHER BINDINDS
 #==========================================================
 
-bindsym $mod+KP_Add exec --no-startup-id feh --recursive --bg-fill --randomize $HOME/Pictures/Wallpapers && fix_cursor
+bindsym $mod+KP_Add exec --no-startup-id $HOME/.bin/random-wp.sh && fix_cursor
 bindsym $mod+d exec --no-startup-id dmenu_recency
 bindsym $mod+space exec rofi -combi-modi window -show drun -modi combi -show-icons -theme Adapta-Nokto
 bindsym $alt+Tab exec rofi -combi-modi drun -show window -modi combi -show-icons -theme Adapta-Nokto
