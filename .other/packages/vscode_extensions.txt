@@ -1,6 +1,8 @@
 bmewburn.vscode-intelephense-client
+daohong-emilio.yash
 DavidAnson.vscode-markdownlint
 fallenwood.vimL
+faustinoaq.lex-flex-yacc-bison
 HookyQR.beautify
 j-james.adapta-nokto-vscode
 James-Yu.latex-workshop

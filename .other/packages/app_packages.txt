@@ -1,7 +1,6 @@
 acpi
 acpid
 alsa-firmware
-alsa-plugins
 alsa-utils
 amd-ucode
 apparmor
@@ -20,6 +19,7 @@ cronie
 datagrip
 deluge
 dfc
+discord
 docker
 ecryptfs-utils
 epdfview
@@ -84,7 +84,6 @@ pa-applet
 patchutils
 pavucontrol
 polkit-gnome
-premid
 pycharm-professional
 qbittorrent
 qt5-styleplugins
@@ -99,6 +98,7 @@ spicetify-cli
 spotify
 spotify-tui
 spotifyd
+stacer
 syslog-ng
 systemd-fsck-silent
 teams

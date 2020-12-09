@@ -202,7 +202,6 @@ pkgconf
 polkit-gnome
 poppler-data
 powertop
-premid
 procps-ng
 psmisc
 pulseaudio-bluetooth
@@ -229,6 +228,7 @@ spicetify-cli
 spotify
 spotify-tui
 spotifyd
+stacer
 subversion
 sudo
 sysfsutils

@@ -71,7 +71,7 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+q kill
 
 # toogle redshift
-bindsym $mod+KP_Divide exec --no-startup-id redshift -O 3000 && fix_cursor
+bindsym $mod+KP_Divide exec --no-startup-id redshift -O 5000 && fix_cursor
 bindsym $mod+KP_Multiply exec --no-startup-id redshift -x && fix_cursor
 
 # reload the configuration file
@@ -354,6 +354,9 @@ mode "$screenshot" {
 # screenshot selected area and save it to clipboard
 bindsym $mod+s --release exec --no-startup-id notify-send 'select an area for the screenshot' && scrot -s -q 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && sleep 0.5 && notify-send 'screenshot has been saved to clipboard'
 
+# screenshot fullscreen and save it to clipboard
+bindsym $mod+Print exec --no-startup-id scrot -q 100 '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f && rm $f' && sleep 0.5 && notify-send 'screenshot has been saved to clipboard'
+
 #==========================================================
 # WINDOW RESIZE MODE SETTINGS
 #==========================================================
@@ -523,7 +526,9 @@ for_window [title="Library"] floating enable
 for_window [title="Snap Store"] floating enable
 for_window [class="(?i)virt-manager"] floating enable
 for_window [class="multibootusb"] floating enable border normal
+for_window [class="stacer"] floating enable
 for_window [class="simplemc.q"] floating enable
+for_window [class="Steam"] floating enable
 for_window [instance="www.icloud.com__notes"] floating enable move to scratchpad
 for_window [instance="www.icloud.com__reminders"] floating enable move to scratchpad
 for_window [instance="www.icloud.com__calendar"] floating enable move to scratchpad
@@ -541,7 +546,7 @@ exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec_always --no-startup-id sbxkb
 exec --no-startup-id pamac-tray
 exec --no-startup-id nm-applet
-exec --no-startup-id mailspring
+exec --no-startup-id mailspring --background
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id xfce4-power-manager
@@ -558,11 +563,11 @@ exec --no-startup-id i3-battery-popup -n -s $HOME/.bin/battery-sound.wav
 
 bindsym $mod+KP_Add exec --no-startup-id $HOME/.bin/random-wp.sh -n && fix_cursor
 bindsym $mod+KP_Subtract exec --no-startup-id $HOME/.bin/random-wp.sh -p && fix_cursor
-bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+space exec rofi -combi-modi window -show drun -modi combi -show-icons -theme Adapta-Nokto
-bindsym $alt+Tab exec rofi -combi-modi drun -show window -modi combi -show-icons -theme Adapta-Nokto
-bindsym $mod+z exec --no-startup-id morc_menu
+# bindsym $mod+d exec rofi -combi-modi window -show drun -modi combi -show-icons -theme Adapta-Nokto
+# bindsym $alt+Tab exec rofi -combi-modi drun -show window -modi combi -show-icons -theme Adapta-Nokto
 # bindsym $mod+Ctrl+b exec $terminal -e bmenu
+bindsym $mod+z exec --no-startup-id morc_menu
+bindsym $mod+space exec --no-startup-id dmenu_recency -h 20 -w 700 -nf grey
 bindsym $mod+Return exec $terminal
 bindsym $mod+Ctrl+b exec --no-startup-id blueman-manager
 bindsym $mod+Ctrl+m exec pavucontrol
