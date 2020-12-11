@@ -242,7 +242,8 @@ bar {
 	bindsym button4 nop
 	bindsym button5 nop
     # font xft:URWGothic-Book 11
-    font xft:Material Design Icons Desktop 11
+    # font xft:Material Design Icons Desktop 11
+    font xft: TerminessTTF Nerd Font Medium 12
     strip_workspace_numbers yes
 
     colors {
@@ -403,7 +404,7 @@ gaps outer -2
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-  smart_gaps on
+#  smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
@@ -568,7 +569,7 @@ exec --no-startup-id i3-battery-popup -n -s $HOME/.bin/battery-sound.wav
 # bindsym $mod+Ctrl+b exec $terminal -e bmenu
 bindsym $mod+z exec --no-startup-id morc_menu
 bindsym $mod+Ctrl+space exec rofi -show combi -show-icons
-bindsym $mod+space exec --no-startup-id dmenu_recency -h 21 -w 700 -nf grey 
+bindsym $mod+space exec --no-startup-id dmenu_recency -h 21 -w 800 -nf grey -fn "TerminessTTF Nerd Font-12"
 bindsym $mod+Return exec $terminal
 bindsym $mod+Ctrl+b exec --no-startup-id blueman-manager
 bindsym $mod+Ctrl+m exec pavucontrol

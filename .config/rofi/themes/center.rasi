@@ -2,18 +2,16 @@
     background-color:            #222D31;
     border-color:                #c3c6c8;
     text-color:                  #bbc2cf;
-    font:                        "Noto 10.5";
+    font:                        "TerminessTTF Nerd Font 12";
     prompt-background:           #16A085;
     prompt-foreground:           #F9FAF9;
     prompt-padding:              4px;
-    alternate-normal-background: #222D31;
-    alternate-normal-foreground: @text-color;
     selected-normal-background:  #16A085;
     selected-normal-foreground:  #ffffff;
     spacing:                     3;
 }
 #window {
-    border:  1;
+    border:  0;
     padding: 5;
 }
 #mainbox {
@@ -39,10 +37,6 @@ message {
 #element.selected.normal {
     background-color: @selected-normal-background;
     text-color:       @selected-normal-foreground;
-}
-#element.alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color:       @alternate-normal-foreground;
 }
 #scrollbar {
     width:        0px ;
