@@ -49,6 +49,8 @@ def install_fonts():
 def install_configs():
     run("cp -r .config/conky $HOME/.config")
     run("cp -r .config/fontconfig $HOME/.config")
+    run("cp -r .config/rofi $HOME/.config")
+    run("sudo cp .config/rofi/bin/rofi-sensible-terminal /usr/bin")
     run("cp .config/gtk-3.0/bookmarks $HOME/.config/gtk-3.0")
     run("cp -r .config/mailspring $HOME/.config")
     run("cp -r .config/spicetify $HOME/.config")
@@ -61,7 +63,6 @@ def install_configs():
     run("cp .config/ranger/rifle.conf $HOME/.config/ranger")
     run("cp .config/dmenu/.dmenurc $HOME")
     run("cp .config/dunst/dunstrc $HOME/config/dunst")
-    run("sudo cp .config/rofi/rofi-sensible-terminal /usr/bin")
     run("cp .config/ssh/config $HOME/.ssh")
     run("cp -r .config/i3/* $HOME/.i3")
     run("sudo cp -r .other/fallout-grub-theme /boot/grub/themes")

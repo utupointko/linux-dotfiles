@@ -74,6 +74,10 @@ bindsym $mod+q kill
 bindsym $mod+KP_Divide exec --no-startup-id redshift -O 5000 && fix_cursor
 bindsym $mod+KP_Multiply exec --no-startup-id redshift -x && fix_cursor
 
+# change wallpaper
+bindsym $mod+KP_Add exec --no-startup-id $HOME/.bin/random-wp.sh -n && fix_cursor
+bindsym $mod+KP_Subtract exec --no-startup-id $HOME/.bin/random-wp.sh -p && fix_cursor
+
 # reload the configuration file
 bindsym $mod+c reload
 
@@ -550,29 +554,26 @@ exec --no-startup-id mailspring --background
 exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 exec --no-startup-id xfce4-power-manager
-# exec --no-startup-id $HOME/.config/conky/start_conky.sh
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec --no-startup-id i3-battery-popup -n -s $HOME/.bin/battery-sound.wav
+# exec --no-startup-id $HOME/.config/conky/start_conky.sh
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #==========================================================
 # APPLICATIONS LAUNCHER BINDINDS
 #==========================================================
 
-bindsym $mod+KP_Add exec --no-startup-id $HOME/.bin/random-wp.sh -n && fix_cursor
-bindsym $mod+KP_Subtract exec --no-startup-id $HOME/.bin/random-wp.sh -p && fix_cursor
-# bindsym $mod+d exec rofi -combi-modi window -show drun -modi combi -show-icons -theme Adapta-Nokto
-# bindsym $alt+Tab exec rofi -combi-modi drun -show window -modi combi -show-icons -theme Adapta-Nokto
 # bindsym $mod+Ctrl+b exec $terminal -e bmenu
 bindsym $mod+z exec --no-startup-id morc_menu
-bindsym $mod+space exec --no-startup-id dmenu_recency -h 20 -w 700 -nf grey
+bindsym $mod+Ctrl+space exec rofi -show combi -show-icons
+bindsym $mod+space exec --no-startup-id dmenu_recency -h 21 -w 700 -nf grey 
 bindsym $mod+Return exec $terminal
 bindsym $mod+Ctrl+b exec --no-startup-id blueman-manager
 bindsym $mod+Ctrl+m exec pavucontrol
-bindsym $mod+Ctrl+e exec --no-startup-id $terminal -e ranger
-bindsym $mod+e exec --no-startup-id $filemanager
+bindsym $mod+e exec --no-startup-id $terminal -e ranger
+bindsym $mod+Ctrl+e exec --no-startup-id $filemanager
 bindsym $mod+w exec --no-startup-id $browser
 bindsym $mod+v exec --no-startup-id code
 bindsym $mod+t exec --no-startup-id telegram-desktop

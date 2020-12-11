@@ -1,0 +1,7 @@
+configuration {
+	theme: "~/.config/rofi/themes/center.rasi";
+	combi-modi: "drun,run";
+	modi: "combi";
+	width: 30;
+	lines: 10;
+}

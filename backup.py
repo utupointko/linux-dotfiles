@@ -19,6 +19,7 @@ def backup_bin():
 def backup_configs():
     run("cp -r $HOME/.config/conky .config")
     run("cp -r $HOME/.config/fontconfig .config")
+    run("cp -r $HOME/.config/rofi .config")
     run("cp $HOME/.config/gtk-3.0/bookmarks .config/gtk-3.0")
     run("dconf dump /com/gexperts/Tilix/ > .config/tilix/config.dconf")
     run("cp $HOME/.config/picom.conf .config/picom")

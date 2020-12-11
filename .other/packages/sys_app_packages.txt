@@ -116,7 +116,7 @@ jfsutils
 json-c
 kvantum-manjaro
 less
-lib32-nvidia-440xx-utils
+lib32-nvidia-450xx-utils
 libdvdcss
 libgpod
 libtool
@@ -125,7 +125,7 @@ lightdm-settings
 lightdm-slick-greeter
 linux-firmware
 linux57
-linux57-nvidia-440xx
+linux57-nvidia-450xx
 lm_sensors
 logrotate
 lsb-release
@@ -183,7 +183,7 @@ npm
 nss-mdns
 ntfs-3g
 ntp
-nvidia-440xx-utils
+nvidia-450xx-utils
 nvidia-prime
 openresolv
 openssh

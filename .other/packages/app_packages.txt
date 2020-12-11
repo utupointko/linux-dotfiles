@@ -1,6 +1,7 @@
 acpi
 acpid
 alsa-firmware
+alsa-plugins
 alsa-utils
 amd-ucode
 apparmor
@@ -46,7 +47,7 @@ ipw2200-fw
 libgpod
 licenses
 lightdm-settings
-linux57-nvidia-440xx
+linux57-nvidia-450xx
 lxappearance
 lxinput
 maia-console
