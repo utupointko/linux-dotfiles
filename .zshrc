@@ -83,7 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # OTHER CONFIGSS
 #==========================================================
 
-
 # ex - archive extractor
 # usage: ex <file>
 ex ()
