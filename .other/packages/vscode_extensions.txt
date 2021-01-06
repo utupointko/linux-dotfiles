@@ -3,6 +3,7 @@ daohong-emilio.yash
 DavidAnson.vscode-markdownlint
 fallenwood.vimL
 faustinoaq.lex-flex-yacc-bison
+foxundermoon.shell-format
 HookyQR.beautify
 j-james.adapta-nokto-vscode
 James-Yu.latex-workshop

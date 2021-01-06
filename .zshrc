@@ -249,4 +249,4 @@ alias weather='curl wttr.in'
 #alias ncdu="ncdu"
 #alias spt="spt"
 #alias cordless="cordless"
-
+#alias logs="dmesg && journalctl && ls /var/log"

@@ -43,7 +43,10 @@ while [ -n "$1" ]; do
 
     case "$1" in
 
-        -p | pair ) 
+        -p | pair )
+            bluetoothctl -- remove $device
+            bluetoothctl -- scan on
+            sleep 10
             bluetoothctl -- pair $device
             sleep 10
             bluetoothctl -- trust $device
@@ -52,16 +55,16 @@ while [ -n "$1" ]; do
             notify-send 'Paired'
             break ;;
 
-        -c | connect ) 
+        -c | connect )
             bluetoothctl -- connect $device
             notify-send 'Connected'
             break ;;
-            
+
         -d | disconnect )
             bluetoothctl -- disconnect
             notify-send 'Disconnected'
             break ;;
-        
+
         -r | reconnect )
             bluetoothctl -- disconnect
             bluetoothctl -- connect $device
@@ -72,11 +75,11 @@ while [ -n "$1" ]; do
         -h | --help )
             echo "$help_message"; break ;;
 
-        *) 
+        *)
             echo "$invalid_message"; break ;;
 
     esac
-    
+
     shift
 
 done

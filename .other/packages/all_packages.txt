@@ -87,6 +87,7 @@ conky-i3
 containerd
 coreutils
 cowsay
+cpio
 cpupower
 crda
 cronie
@@ -135,6 +136,7 @@ elfutils
 enchant
 epdfview
 espeak
+etcher
 exempi
 exfat-utils
 exiv2
@@ -161,7 +163,6 @@ foomatic-db
 foomatic-db-engine
 foomatic-db-gutenprint-ppds
 freeglut
-freeoffice
 freetype2
 fribidi
 fuse-common
@@ -216,7 +217,6 @@ graphite
 grep
 groff
 grub
-grub-customizer
 grub-theme-manjaro
 gsettings-desktop-schemas
 gsfonts
@@ -258,7 +258,6 @@ harfbuzz
 harfbuzz-icu
 haveged
 hdparm
-hexchat
 hicolor-icon-theme
 hidapi
 highlight
@@ -312,6 +311,7 @@ jre8-openjdk-headless
 js78
 json-c
 json-glib
+jsoncpp
 karchive
 kauth
 kbd
@@ -328,6 +328,7 @@ kdeclarative
 kded
 kdelibs4support
 kdevelop
+kdevelop-php
 kemoticons
 keyutils
 kglobalaccel
@@ -369,6 +370,7 @@ lib32-e2fsprogs
 lib32-expat
 lib32-gcc-libs
 lib32-glibc
+lib32-glu
 lib32-icu
 lib32-keyutils
 lib32-krb5
@@ -383,6 +385,9 @@ lib32-libpsl
 lib32-libssh2
 lib32-libunistring
 lib32-libunwind
+lib32-libva
+lib32-libva-vdpau-driver
+lib32-libvdpau
 lib32-libx11
 lib32-libxau
 lib32-libxcb
@@ -398,11 +403,15 @@ lib32-llvm-libs
 lib32-lm_sensors
 lib32-lz4
 lib32-mesa
+lib32-mesa-vdpau
 lib32-ncurses
-lib32-nvidia-450xx-utils
+lib32-nvidia-utils
 lib32-openssl
 lib32-readline
+lib32-simplescreenrecorder
 lib32-util-linux
+lib32-vulkan-intel
+lib32-vulkan-radeon
 lib32-wayland
 lib32-xz
 lib32-zlib
@@ -422,7 +431,6 @@ libblockdev
 libbluray
 libbs2b
 libbsd
-libburn
 libbytesize
 libcaca
 libcanberra
@@ -494,7 +502,6 @@ libindicator-gtk3
 libinput
 libinstpatch
 libiptcdata
-libisofs
 libjpeg-turbo
 libkate
 libkomparediff2
@@ -520,6 +527,7 @@ libmnl
 libmodplug
 libmpc
 libmpcdec
+libmpdclient
 libmpeg2
 libmtp
 libmypaint
@@ -597,6 +605,9 @@ libusbmuxd
 libutf8proc
 libuv
 libva
+libva-intel-driver
+libva-mesa-driver
+libva-vdpau-driver
 libvdpau
 libvisual
 libvorbis
@@ -641,6 +652,7 @@ libxss
 libxt
 libxtst
 libxv
+libxvmc
 libxxf86vm
 libyaml
 libzen
@@ -652,9 +664,10 @@ lightdm-slick-greeter
 lilv
 linux-api-headers
 linux-firmware
-linux57
-linux57-nvidia-450xx
-linux57-virtualbox-host-modules
+linux-latest
+linux510
+linux510-nvidia
+linux510-virtualbox-host-modules
 llvm-libs
 lm_sensors
 lmdb
@@ -698,8 +711,10 @@ manjaro-settings-manager
 manjaro-settings-manager-notifier
 manjaro-system
 manjaro-zsh-config
+mariadb-libs
 markdown_previewer
 matcha-gtk-theme
+mbedtls
 md4c
 mdadm
 media-player-info
@@ -707,21 +722,17 @@ mediainfo
 memtest86+
 mesa
 mesa-demos
+mesa-vdpau
 meson
 metis
 mhwd
 mhwd-amdgpu
 mhwd-ati
 mhwd-db
-mhwd-nvidia-340xx
+mhwd-nvidia
 mhwd-nvidia-390xx
-mhwd-nvidia-418xx
-mhwd-nvidia-430xx
-mhwd-nvidia-435xx
-mhwd-nvidia-440xx
-mhwd-nvidia-450xx
-mhwd-nvidia-455xx
 microsoft-office-web-jak
+minecraft-launcher
 minizip
 mjpegtools
 mk_vpp
@@ -745,8 +756,10 @@ ncurses
 ndctl
 neofetch
 neon
+nerd-fonts-noto-sans-mono
 nerd-fonts-terminus
 net-snmp
+netbeans
 netctl
 nettle
 network-manager-applet
@@ -771,8 +784,9 @@ nss
 nss-mdns
 ntfs-3g
 ntp
-nvidia-450xx-utils
 nvidia-prime
+nvidia-utils
+obs-studio
 oniguruma
 openal
 openconnect
@@ -863,6 +877,7 @@ pkgfile
 polkit
 polkit-gnome
 polkit-qt5
+polybar
 poppler
 poppler-data
 poppler-glib
@@ -876,6 +891,7 @@ procps-ng
 psmisc
 pulseaudio
 pulseaudio-bluetooth
+py3status
 pycharm-professional
 pyside2
 python
@@ -1020,6 +1036,7 @@ sg3_utils
 shaderc
 shadow
 shared-mime-info
+simplescreenrecorder
 slang
 smbclient
 snappy
@@ -1096,6 +1113,7 @@ udisks2
 ueberzug
 ufw
 umbrello
+unixodbc
 unzip
 upower
 urxvt-perls
@@ -1123,6 +1141,8 @@ vpnc
 vte-common
 vte3
 vulkan-icd-loader
+vulkan-intel
+vulkan-radeon
 w3m
 wallpapers-juhraya
 wavpack
@@ -1169,7 +1189,10 @@ xf86-input-elographics
 xf86-input-evdev
 xf86-input-libinput
 xf86-input-void
-xfburn
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
 xfce4-power-manager
 xfconf
 xfsprogs
@@ -1184,6 +1207,7 @@ xorg-setxkbmap
 xorg-twm
 xorg-xauth
 xorg-xdpyinfo
+xorg-xfd
 xorg-xhost
 xorg-xinit
 xorg-xinput
@@ -1214,6 +1238,7 @@ zsh-autosuggestions
 zsh-completions
 zsh-history-substring-search
 zsh-syntax-highlighting
+zsh-theme-powerlevel10k
 zstd
 zvbi
 zxing-cpp

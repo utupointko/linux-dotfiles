@@ -64,6 +64,7 @@ message {
     width: 10em;
 }
 #prompt {
+    enabled: false;
     padding:          @prompt-padding;
     text-color:       @prompt-foreground;
     font:             @prompt-font;
