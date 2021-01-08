@@ -22,8 +22,8 @@ def get_icon(icon_id):
         "50d": "",
         "50n": "",
     }
-    return switcher.get(icon_id, "") 
-    
+    return switcher.get(icon_id, "")
+
 
 def get_weather(location, api_key):
     url = "https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid={}".format(location, api_key)
@@ -33,8 +33,8 @@ def get_weather(location, api_key):
 def main():
     if len(sys.argv) != 2:
         exit("Usage: {} LOCATION".format(sys.argv[0]))
-    location = sys.argv[1] 
-    
+    location = sys.argv[1]
+
     api_key = "a2ba6d49a858e70ab9bbbe0babb25fc2"
     weather = get_weather(location, api_key)
     icon_id =  weather['weather'][0]['icon']
