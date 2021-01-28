@@ -1,4 +1,5 @@
 bmewburn.vscode-intelephense-client
+brapifra.phpserver
 daohong-emilio.yash
 DavidAnson.vscode-markdownlint
 fallenwood.vimL
@@ -19,3 +20,4 @@ vscjava.vscode-java-dependency
 vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscode-icons-team.vscode-icons
+zhuangtongfa.material-theme

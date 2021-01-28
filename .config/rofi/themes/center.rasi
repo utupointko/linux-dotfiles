@@ -69,3 +69,6 @@ message {
     text-color:       @prompt-foreground;
     font:             @prompt-font;
 }
+element-icon {
+    size: 1.65ch;
+}

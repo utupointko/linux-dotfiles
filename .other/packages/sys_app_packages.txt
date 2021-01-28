@@ -110,6 +110,7 @@ iputils
 ipw2100-fw
 ipw2200-fw
 jdk-openjdk
+jdk11-openjdk
 jfsutils
 json-c
 kvantum-manjaro

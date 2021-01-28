@@ -41,7 +41,7 @@ def backup_zsh():
 
 if __name__ == "__main__":
 
-    backup_packages()
+    # backup_packages()
     backup_bin()
     backup_configs()
     backup_i3()
