@@ -540,6 +540,7 @@ for_window [class="minecraft-launcher"] floating enable
 for_window [title="Welcome to IntelliJ IDEA"] floating enable
 for_window [title="Welcome to CLion"] floating enable
 for_window [title="Welcome to PyCharm"] floating enable
+for_window [title="Welcome to WebStorm"] floating enable
 for_window [title="Welcome to DataGrip"] floating enable
 for_window [instance="www.icloud.com__notes"] floating enable move to scratchpad
 for_window [instance="www.icloud.com__reminders"] floating enable move to scratchpad

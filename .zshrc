@@ -233,6 +233,7 @@ alias mylip="hostname -I"
 alias mymc="ifconfig -a | grep ether"
 
 # temp apps
+alias hacker-rank="code ~/github/hacker-rank-problems"
 alias temp="sh ~/.bin/temp.sh"
 alias btooth="sh ~/.bin/btooth.sh"
 alias lyrics="py ~/.bin/lyrics.py"
