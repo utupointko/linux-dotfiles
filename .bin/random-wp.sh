@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 
 
 ##
@@ -37,7 +37,7 @@ Try 'random-wp --help' for more information.
 function set_next() {
     random_wp=$(find $WP_PATH -type f | sort -R | tail -1)
     feh --no-fehbg --bg-fill "$random_wp"
-    echo $random_wp >> $DB    
+    echo $random_wp >> $DB
 }
 
 function set_previous() {
@@ -57,20 +57,20 @@ while [ -n "$1" ]; do
 
     case "$1" in
 
-        -n | --next ) 
+        -n | --next )
             set_next; break ;;
 
-        -p | --previous ) 
+        -p | --previous )
             set_previous; break ;;
 
         -h | --help )
             echo "$help_message"; break ;;
 
-        *) 
+        *)
             echo "$invalid_message"; break ;;
 
     esac
-    
+
     shift
 
 done
