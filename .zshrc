@@ -215,13 +215,15 @@ alias glog="git log --oneline --all --graph --decorate"
 alias gitu="git add . && git commit && git push"
 
 # docker
-alias dL="docker images"
+alias diL="docker images"
+alias dvL="docker volume ls"
 alias dR="docker run --rm"
 alias dS="docker stop"
 alias dps="docker ps"
 alias dpsa="docker ps -a"
 alias drm="docker rm"
 drma() { docker rm $(docker ps -aq ) }
+alias drmi="docker rmi"
 
 # docker-apps
 alias sage-start="docker run --rm -p 8888:8888 sagemath/sagemath:latest sage-jupyter"
