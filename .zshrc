@@ -216,7 +216,7 @@ alias gitu="git add . && git commit && git push"
 
 # docker
 alias dL="docker images"
-alias dR="docker run"
+alias dR="docker run --rm"
 alias dS="docker stop"
 alias dps="docker ps"
 alias dpsa="docker ps -a"
@@ -224,7 +224,7 @@ alias drm="docker rm"
 drma() { docker rm $(docker ps -aq ) }
 
 # docker-apps
-alias sage-start="docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter"
+alias sage-start="docker run --rm -p 8888:8888 sagemath/sagemath:latest sage-jupyter"
 
 # wifi
 alias winfo="iw dev"
