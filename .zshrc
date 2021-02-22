@@ -26,7 +26,6 @@ export PATH="/home/$USER/.bin/:$PATH"
 export BROWSER=/usr/bin/google-chrome-stable
 export TERMINAL=/usr/bin/tilix
 export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
 
 # themes
 ZSH_THEME="bira"
@@ -83,30 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # OTHER CONFIGSS
 #==========================================================
 
-# ex - archive extractor
-# usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
-
 # error handling
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
@@ -135,11 +110,13 @@ export LANG=en_US.UTF-8
 # disable BIOS beep
 xset -b
 
-# file search
-fs() { rifle "$(find -type f | fzf -e --reverse --prompt="Enter string > " --header="ESC to quit. ")" }
+#==========================================================
+# FUNCTIONS
+#==========================================================
 
 # switch playback audio
 pa-list() { pacmd list-sinks | awk '/index/ || /name:/' ;}
+
 pa-set() { 
 	# list all apps in playback tab (ex: cmus, mplayer, vlc)
 	inputs=($(pacmd list-sink-inputs | awk '/index/ {print $2}')) 
@@ -148,6 +125,7 @@ pa-set() {
 	# apply the changes to all running apps to use the new output device
 	for i in ${inputs[*]}; do pacmd move-sink-input $i $1 &> /dev/null; done
 }
+
 pa-playbacklist() { 
 	# list individual apps
 	echo "==============="
@@ -159,12 +137,40 @@ pa-playbacklist() {
 	echo "Sound Devices"
 	pacmd list-sinks | awk '/index/ || /name:/'
 }
+
 pa-playbackset() { 
 	# set the default output device
 	pacmd set-default-sink "$2" &> /dev/null
 	# apply changes to one running app to use the new output device
 	pacmd move-sink-input "$1" "$2" &> /dev/null
 }
+
+# ex - archive extractor
+# usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1     ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
+
+# file search
+fs() { rifle "$(find -type f | fzf -e --reverse --prompt="Enter string > " --header="ESC to quit. ")" }
 
 #==========================================================
 # ALIASES / SHORTCUTS
@@ -177,29 +183,28 @@ alias p="cd ~/github/playground/"
 
 # terminal
 alias cl="clear"
-alias py="python3"
 alias cp="cp -iv"
-alias cat="bat"
+alias more="less"
 alias df="df -h"
 alias free="free -m"
-alias more="less"
-alias grep="grep -i --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}"
-alias c="xclip -selection clipboard"
 alias orphans="pacman -Qtdq"
-alias ro="sudo pacman -Rns $(pacman -Qtdq)"
+ro() { sudo pacman -Rns $(pacman -Qtdq) }
+alias c="xclip -selection clipboard"
 alias clean="rm -rf .cache/yay/* ; rm -rf .local/share/Trash/files/*"
+alias grep="grep -i --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}"
+alias reload="source ~/.zshrc"
+alias py="python3"
+alias cat="bat"
 
 # config files
-alias bashc="vim ~/.bashrc"
-alias zshc="vim ~/.zshrc"
-alias vimc="vim ~/.vimrc"
-alias i3c="vim ~/.i3/"
-alias polybarc="vim ~/.config/polybar/"
-alias comptonc="vim ~/.config/compton.conf"
+alias bashc="$EDITOR ~/.bashrc"
+alias zshc="$EDITOR ~/.zshrc"
+alias vimc="$EDITOR ~/.vimrc"
+alias i3c="$EDITOR ~/.i3/"
+alias polybarc="$EDITOR ~/.config/polybar/"
+alias comptonc="$EDITOR ~/.config/compton.conf"
 
 # git
-alias rs="rails s"
-alias ys="yarn start"
 alias gI='git init'
 alias gA="git add ."
 alias gP="git push origin master"
@@ -208,6 +213,18 @@ alias gC="gcmsg"
 alias gS="git status"
 alias glog="git log --oneline --all --graph --decorate"
 alias gitu="git add . && git commit && git push"
+
+# docker
+alias dL="docker images"
+alias dR="docker run"
+alias dS="docker stop"
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias drm="docker rm"
+drma() { docker rm $(docker ps -aq ) }
+
+# docker-apps
+alias sage-start="docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter"
 
 # wifi
 alias winfo="iw dev"
@@ -219,6 +236,7 @@ alias wconnect802="sudo nmcli c --ask up"
 alias wdisconnect="nmcli con down id"
 alias wdisconnect802="sudo nmcli c --ask down"
 
+# dns
 alias dns='cat /etc/resolv.conf'
 alias dns-adguard1='sudo sh -c "echo nameserver 176.103.130.130 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nADGUARD DEFAULT (adblock)\n176.103.130.130"'
 alias dns-adguard2='sudo sh -c "echo nameserver 176.103.130.132 > /etc/resolv.conf"; echo -e "DNS changed successfully!\n\nADFUARD FAMILY (adblock + porn)\n176.103.130.132"'
@@ -230,21 +248,20 @@ alias dns-yandex='sudo sh -c "echo nameserver 77.88.8.8 > /etc/resolv.conf"; ech
 alias mypref="inxi -Fxz"
 alias mydev="lsusb; ifconfig"
 alias mypip="curl ifconfig.me"
-alias mylip="hostname -I"
+alias mylip="hostname -i"
 alias mymc="ifconfig -a | grep ether"
 
 # scripts from bin folder
-alias ada="sh ~/.bin/ada.sh"
-alias temp="sh ~/.bin/temp.sh"
-alias wget-dir="sh ~/.bin/wget-dir.sh"
-alias btooth="sh ~/.bin/btooth.sh"
 alias lyrics="py ~/.bin/lyrics.py"
 alias drive="py ~/.bin/drive.py"  
+alias btooth="sh ~/.bin/btooth.sh"
+alias temp="sh ~/.bin/temp.sh"
+alias ada="sh ~/.bin/ada.sh"
+alias wget-dir="sh ~/.bin/wget-dir.sh"
 
 # other
 alias hacker-rank="code ~/github/hacker-rank-problems"
 alias aramis="ssh -L 2001:aramis.inf.elte.hu:1521 utupointko@caesar.elte.hu"
-alias sage-start="docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter"
 alias siji="xfd -rows '19' -columns '34' -fn '-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1'"
 alias say="echo "$1" | espeak -s 120 2>/dev/null"
 alias weather="curl wttr.in"
