@@ -29,7 +29,6 @@ function clear () {
 }
 
 function build_and_run() {
-    echo $file
     printf "BUILD:\n"; gnatmake $FILE && clear && printf "RUN:\n" && "./$file"; clear;
     if [ -f $file ]; then
          rm $file;
