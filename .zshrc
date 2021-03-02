@@ -260,6 +260,7 @@ alias btooth="sh ~/.bin/btooth.sh"
 alias temp="sh ~/.bin/temp.sh"
 alias ada="sh ~/.bin/ada.sh"
 alias wget-dir="sh ~/.bin/wget-dir.sh"
+alias som="py ~/.bin/exchange-rates.py"
 
 # other
 alias hacker-rank="code ~/github/hacker-rank-problems"
