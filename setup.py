@@ -65,7 +65,9 @@ def install_configs():
     run("cp .config/dunst/dunstrc $HOME/config/dunst")
     run("cp .config/ssh/config $HOME/.ssh")
     run("cp -r .config/i3/* $HOME/.i3")
-    run("sudo cp -r .other/fallout-grub-theme /boot/grub/themes")
+    run("sudo cp -r .other/grub/fallout-grub-theme /boot/grub/themes")
+    run("sudo cp -r .other/grub/grub /etc/default")
+    run("sudo update-grub")
     run("cp .vimrc $HOME")
     run("cp .zshrc $HOME")
 

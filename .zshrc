@@ -227,6 +227,7 @@ alias drmi="docker rmi"
 
 # docker-apps
 alias sage-start="docker run --rm -p 8888:8888 sagemath/sagemath:latest sage-jupyter"
+alias gollum-start="docker run --rm -d -p 80:80 -v ~/Downloads/team4.wiki:/root/wiki genebarker/gollum --http"
 
 # wifi
 alias winfo="iw dev"
