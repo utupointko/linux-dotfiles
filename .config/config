@@ -1,0 +1,14 @@
+[DEFAULT]
+player = vlc
+verbose = true
+timeout = 60
+host = 127.0.0.1
+port = 6878
+
+[tty]
+engine = acestreamengine --client-console --log-file /home/jonian/.ACEStream/engine.log
+
+[browser]
+engine = acestreamengine --client-gtk --log-file /home/jonian/.ACEStream/browser.log
+verbose = false
+
