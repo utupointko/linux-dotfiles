@@ -23,9 +23,10 @@
 # paths
 export ZSH="/home/$USER/.oh-my-zsh"
 export PATH="/home/$USER/.bin/:$PATH"
-export BROWSER=/usr/bin/google-chrome-stable
+export BROWSER=/usr/bin/firefox
 export TERMINAL=/usr/bin/tilix
 export EDITOR=/usr/bin/vim
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 
 # themes
 ZSH_THEME="bira"
@@ -183,7 +184,7 @@ alias p="cd ~/github/playground/"
 
 # terminal
 alias cl="clear"
-alias cp="cp -iv"
+alias cp="cp"
 alias more="less"
 alias df="df -h"
 alias free="free -m"
