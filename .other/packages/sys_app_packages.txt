@@ -50,6 +50,7 @@ epdfview
 exfat-utils
 f2fs-tools
 fakeroot
+feh
 ffmpeg
 ffmpegthumbnailer
 file

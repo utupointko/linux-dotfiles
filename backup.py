@@ -19,7 +19,6 @@ def backup_bin():
 def backup_configs():
     run("cp -r $HOME/.i3/* .config/i3")
     run("cp -r $HOME/.config/rofi .config")
-    run("cp -r $HOME/.config/conky .config")
     run("cp -r $HOME/.config/fontconfig .config")
     run("dconf dump /com/gexperts/Tilix/ > .config/tilix/config.dconf")
     run("cp $HOME/.config/nvim/init.vim .config/nvim")
@@ -27,9 +26,8 @@ def backup_configs():
     run("cp $HOME/.config/dunst/dunstrc .config/dunst")
     run("cp $HOME/.config/picom.conf .config/picom")
     run("cp $HOME/.config/gtk-3.0/bookmarks .config/gtk-3.0")
-    run("cp $HOME/.dmenurc .config/dmenu")
     run("cp $HOME/.ssh/config .config/ssh")
-    run("cp $HOME/.zshrc .")
+    run("cp $HOME/.zshrc .config/zsh")
 
 
 if __name__ == "__main__":
