@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=Spotify TUI
-Comment=Spotify for the terminal written in Rust
-Exec=tilix -e /usr/bin/spt
-Icon=/home/arslan/github/dotfiles/.other/spt/spt256.png
-Terminal=false
