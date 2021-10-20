@@ -58,9 +58,9 @@ setopt autocd
 
 # variables
 export LANG=en_US.UTF-8
-export BROWSER=/sbin/google-chrome-stable
-export TERMINAL=/sbin/alacritty
-export EDITOR=/sbin/nvim
+export BROWSER=/usr/bin/google-chrome-stable
+export TERMINAL=/usr/bin/tilix
+export EDITOR=/usr/bin/nvim
 
 # paths
 export PATH="/home/$USER/.bin/:$PATH"
@@ -114,13 +114,11 @@ alias p="cd ~/github/playground/"
 # config files
 alias bashc="$EDITOR ~/.bashrc"
 alias zshc="$EDITOR ~/.zshrc"
-alias vimc="$EDITOR ~/.vimrc"
-alias i3c="$EDITOR ~/.config/i3/"
-alias polybarc="$EDITOR ~/.config/polybar/"
+alias vimc="$EDITOR ~/.config/nvim/init.vim"
+alias i3c="$EDITOR ~/.i3"
 
 # terminal
 alias cl="clear"
-alias yay="paru"
 alias vim="nvim"
 alias cat="bat"
 alias more="less"

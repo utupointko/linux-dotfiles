@@ -1,74 +1,48 @@
 * {
-    background-color:            #222D31;
-    border-color:                #c3c6c8;
-    text-color:                  #bbc2cf;
-    font:                        "TerminessTTF Nerd Font 12";
-    prompt-background:           #16A085;
-    prompt-foreground:           #F9FAF9;
-    prompt-padding:              4px;
-    selected-normal-background:  #16A085;
-    selected-normal-foreground:  #ffffff;
-    spacing:                     3;
+    font:               "TerminessTTF Nerd Font 12";
+    text-color:         #bbc2cf;
+    background-color:   #222D31;
 }
-#window {
-    border:  0;
-    padding: 5;
+
+window {
+    padding:            5px;
+    width:              35%;
 }
-#mainbox {
-    border:  0;
-    padding: 0;
+
+inputbar {
+    padding:            0 0 5px 0;
+    border:             0 0 1px ;
+    border-color:       #336058;
 }
-message {
-    border:       1px dash 0px 0px ;
-    padding:      1px ;
+
+prompt {
+    enabled:            false;
 }
-#listview {
-    fixed-height: 0;
-    border:       1px dash 0px 0px ;
-    spacing:      2px ;
-    scrollbar:    true;
-    padding:      2px 0px 0px ;
+
+entry {
+    padding:            4px 4px;
 }
-#element {
-    border:  0;
-    padding: 1px ;
-    text-color:       #BFBFBF;
+
+listview {
+    padding:            5px 0 0 0;
+    spacing:            2px;
 }
-#element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
+
+element {
+    padding:            1px;
 }
-#scrollbar {
-    width:        0px ;
-    border:       0;
-    handle-width: 0px ;
-    padding:      0;
-}
-#sidebar {
-    border: 2px dash 0px 0px ;
-}
-#button.selected {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
-}
-#inputbar {
-    spacing:    0;
-    padding:    1px ;
-}
-#case-indicator {
-    spacing:    0;
-}
-#entry {
-    padding: 4px 4px;
-    expand: false;
-    width: 10em;
-}
-#prompt {
-    enabled: false;
-    padding:          @prompt-padding;
-    text-color:       @prompt-foreground;
-    font:             @prompt-font;
-}
+
 element-icon {
-    size: 1.65ch;
+    padding:            2px;
+    size:               1.85ch;
+}
+
+element-text {
+    padding:            0 5px 0 5px;
+    text-color:         #bfbfbf;
+}
+
+element.selected.normal {
+    border:             1px;
+    border-color:       #16A085;
 }

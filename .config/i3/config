@@ -25,7 +25,7 @@ set $alt Mod1
 set $mod Mod4
 
 # applicaiton variables
-set $browser firefox
+set $browser google-chrome-stable
 set $filemanager nautilus
 set $terminal tilix
 
@@ -603,8 +603,6 @@ exec_always --no-startup-id fix_xcursor
 exec --no-startup-id i3-battery-popup -n -s $HOME/.bin/battery-sound.wav
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 300 blurlock '' &
 exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 900 'systemctl suspend' '' &
-# exec --no-startup-id xautolock -time 5 -locker blurlock
-# exec --no-startup-id xautolock -time 15 -locker "systemctl suspend" &
 # exec --no-startup-id $HOME/.config/conky/start_conky.sh
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
@@ -615,7 +613,7 @@ exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 90
 # bindsym $mod+Ctrl+b exec $terminal -e bmenu
 bindsym $mod+z exec --no-startup-id morc_menu
 bindsym $mod+Ctrl+space exec --no-startup-id dmenu_recency -h 22 -nf grey -fn "TerminessTTF Nerd Font-12"
-bindsym $mod+space exec rofi -show combi -show-icons -location 2 -yoffset 300
+bindsym $mod+space exec rofi -show drun
 bindsym $mod+Return exec $terminal
 bindsym $mod+Ctrl+b exec --no-startup-id blueman-manager
 bindsym $mod+Ctrl+m exec pavucontrol
