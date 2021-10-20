@@ -12,7 +12,7 @@
 
 
 
-# Wallpaper direcotory path
+# Wallpaper directory path
 ##
 WP_PATH=$HOME/Pictures/Wallpapers
 DB=/tmp/.fehbg

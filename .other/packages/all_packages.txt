@@ -138,6 +138,7 @@ f2fs-tools
 faac
 faad2
 fakeroot
+feh
 ffmpeg
 ffmpegthumbnailer
 fftw
