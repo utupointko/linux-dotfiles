@@ -23,6 +23,7 @@ def backup_configs():
     run("dconf dump /com/gexperts/Tilix/ > .config/tilix/config.dconf")
     run("cp $HOME/.config/nvim/init.vim .config/nvim")
     run("cp $HOME/.config/ranger/rifle.conf .config/ranger")
+    run("cp $HOME/.config/ranger/scope.sh .config/ranger")
     run("cp $HOME/.config/dunst/dunstrc .config/dunst")
     run("cp $HOME/.config/picom.conf .config/picom")
     run("cp $HOME/.config/gtk-3.0/bookmarks .config/gtk-3.0")

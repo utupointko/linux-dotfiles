@@ -30,6 +30,7 @@ def install_configs():
     run("cp .config/picom/picom.conf $HOME/.config")
     run("cp .config/dunst/dunstrc $HOME/.config/dunst")
     run("cp .config/ranger/rifle.conf $HOME/.config/ranger")
+    run("cp .config/ranger/scope.sh $HOME/.config/ranger")
     run("cp .config/ssh/config $HOME/.ssh")
     run("cp .config/gtk-3.0/bookmarks $HOME/.config/gtk-3.0")
 
