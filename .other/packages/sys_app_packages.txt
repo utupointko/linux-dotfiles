@@ -96,7 +96,13 @@ intel-ucode
 inxi
 iproute2
 iputils
+jdk-openjdk
+jdk8-openjdk
 jfsutils
+jre-openjdk
+jre-openjdk-headless
+jre8-openjdk
+jre8-openjdk-headless
 kvantum-manjaro
 less
 lib32-flex
@@ -149,6 +155,7 @@ mesa-demos
 mesa-vdpau
 mhwd
 mhwd-db
+minecraft-launcher
 mkinitcpio-openswap
 mlocate
 mobile-broadband-provider-info

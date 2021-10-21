@@ -290,10 +290,18 @@ iw
 jack2
 jansson
 jasper
+java-environment-common
+java-runtime-common
 jbig2dec
+jdk-openjdk
+jdk8-openjdk
 jemalloc
 jfsutils
 jq
+jre-openjdk
+jre-openjdk-headless
+jre8-openjdk
+jre8-openjdk-headless
 js78
 json-c
 json-glib
@@ -704,6 +712,7 @@ mhwd-ati
 mhwd-db
 mhwd-nvidia
 mhwd-nvidia-390xx
+minecraft-launcher
 minizip
 mjpegtools
 mkinitcpio

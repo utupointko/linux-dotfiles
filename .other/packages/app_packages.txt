@@ -57,6 +57,7 @@ manjaro-system
 manjaro-zsh-config
 markdown_previewer
 memtest86+
+minecraft-launcher
 mkinitcpio-openswap
 moc
 morc_menu
