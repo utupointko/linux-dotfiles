@@ -1104,7 +1104,6 @@ wayland-protocols
 web-installer-url-handler
 webkit2gtk
 webrtc-audio-processing
-webstorm
 wget
 which
 wildmidi

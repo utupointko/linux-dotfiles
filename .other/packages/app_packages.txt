@@ -115,7 +115,6 @@ visual-studio-code-bin
 vlc
 volumeicon
 wallpapers-juhraya
-webstorm
 xarchiver
 xautolock
 xcursor-chameleon-pearl
