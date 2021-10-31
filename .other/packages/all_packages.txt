@@ -294,12 +294,15 @@ java-environment-common
 java-runtime-common
 jbig2dec
 jdk-openjdk
+jdk11-openjdk
 jdk8-openjdk
 jemalloc
 jfsutils
 jq
 jre-openjdk
 jre-openjdk-headless
+jre11-openjdk
+jre11-openjdk-headless
 jre8-openjdk
 jre8-openjdk-headless
 js78
@@ -668,6 +671,7 @@ lvm2
 lxappearance
 lxinput
 lxmenu-data
+lyrebird
 lz4
 lzo
 m4
@@ -1001,6 +1005,7 @@ snappy
 sord
 sound-theme-freedesktop
 soundtouch
+sox
 spandsp
 spectre-meltdown-checker
 speedtest-cli
@@ -1099,6 +1104,7 @@ wayland-protocols
 web-installer-url-handler
 webkit2gtk
 webrtc-audio-processing
+webstorm
 wget
 which
 wildmidi

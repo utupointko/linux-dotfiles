@@ -41,6 +41,7 @@ linux510-nvidia
 linux514-nvidia
 lxappearance
 lxinput
+lyrebird
 maia-console
 mailspring
 man-db
@@ -114,6 +115,7 @@ visual-studio-code-bin
 vlc
 volumeicon
 wallpapers-juhraya
+webstorm
 xarchiver
 xautolock
 xcursor-chameleon-pearl

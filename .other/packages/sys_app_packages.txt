@@ -97,10 +97,13 @@ inxi
 iproute2
 iputils
 jdk-openjdk
+jdk11-openjdk
 jdk8-openjdk
 jfsutils
 jre-openjdk
 jre-openjdk-headless
+jre11-openjdk
+jre11-openjdk-headless
 jre8-openjdk
 jre8-openjdk-headless
 kvantum-manjaro
@@ -128,6 +131,7 @@ logrotate
 lvm2
 lxappearance
 lxinput
+lyrebird
 m4
 maia-console
 mailspring
@@ -266,6 +270,7 @@ vulkan-intel
 vulkan-radeon
 w3m
 wallpapers-juhraya
+webstorm
 wget
 which
 wmctrl
