@@ -233,7 +233,6 @@ snapd
 spectre-meltdown-checker
 speedtest-cli
 stacer
-steam-manjaro
 subversion
 sudo
 sysfsutils

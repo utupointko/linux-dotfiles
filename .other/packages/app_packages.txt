@@ -95,7 +95,6 @@ screenfetch
 spectre-meltdown-checker
 speedtest-cli
 stacer
-steam-manjaro
 syslog-ng
 systemd-fsck-silent
 teams
@@ -104,6 +103,7 @@ terminus-font
 tilix
 timeset
 tlp
+ttf-droid
 ttf-inconsolata
 ttf-indic-otf
 ttf-material-design-icons-webfont

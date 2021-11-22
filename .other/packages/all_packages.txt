@@ -612,6 +612,7 @@ libxcb
 libxcomposite
 libxcrypt
 libxcursor
+libxcvt
 libxdamage
 libxdg-basedir
 libxdmcp
@@ -716,6 +717,7 @@ mhwd-ati
 mhwd-db
 mhwd-nvidia
 mhwd-nvidia-390xx
+mhwd-nvidia-470xx
 minecraft-launcher
 minizip
 mjpegtools
@@ -906,6 +908,7 @@ python-gobject
 python-html5lib
 python-hyperlink
 python-idna
+python-importlib-metadata
 python-incremental
 python-mako
 python-markdown
@@ -951,6 +954,7 @@ python-webencodings
 python-xapp
 python-xlib
 python-yaml
+python-zipp
 python-zope-interface
 qbittorrent
 qpdf
@@ -1019,7 +1023,6 @@ sratom
 srt
 stacer
 startup-notification
-steam-manjaro
 stoken
 subversion
 sudo
@@ -1103,6 +1106,7 @@ wayland
 wayland-protocols
 web-installer-url-handler
 webkit2gtk
+webkit2gtk-4.1
 webrtc-audio-processing
 wget
 which
@@ -1176,6 +1180,7 @@ xvidcore
 xxhash
 xz
 yajl
+yasm
 yay
 yelp
 yelp-xsl

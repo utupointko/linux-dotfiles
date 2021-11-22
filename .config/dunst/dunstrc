@@ -31,11 +31,15 @@
     sort = yes
     indicate_hidden = yes
     alignment = left
-    bounce_freq = 5
     show_age_threshold = 60
     word_wrap = no
     ignore_newline = no
-    geometry = "0x4-25-25"
+    width = 200
+    height = 125
+    origin = bottom-right 
+    notification_limit = 0 
+    offset = 25x25
+    progress_bar_max_width = 200
     shrink = yes
     transparency = 15
     idle_threshold = 120 
@@ -48,23 +52,22 @@
     separator_height = 1
     padding = 8
     horizontal_padding = 10
-    separator_color = #263238
-    startup_notification = false
+    separator_color = "#263238"
     dmenu = /usr/bin/dmenu -p dunst:
     icon_position = left
     icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
-    max_icon_size=128
+    max_icon_size=100
 
 # =========================================================
 # OTHERETTINGS
 # =========================================================
 
-[shortcuts]
-
-    close = mod1+space
-    close_all = ctrl+mod1+space
-    history = ctrl+mod4+h 
-    context = ctrl+mod1+c
+#[shortcuts]
+#
+#    close = mod1+space
+#    close_all = ctrl+mod1+space
+#    history = ctrl+mod4+h 
+#    context = ctrl+mod1+c
 
 [urgency_low]
 
