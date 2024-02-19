@@ -1,0 +1,105 @@
+#==========================================================
+# PATHS
+#==========================================================
+
+# paths
+export ZSH="/Users/arslanabdizhalilov/.oh-my-zsh"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+#==========================================================
+# CONFIGS / THEMES / PLUGINS
+#==========================================================
+
+# configs
+HISTSIZE=10000
+SAVEHIST=10000
+ENABLE_CORRECTION="false"
+HIST_STAMPS="dd/mm/yyyy"
+
+# options
+setopt extendedglob
+setopt nocaseglob
+setopt rcexpandparam
+setopt nocheckjobs
+setopt numericglobsort
+setopt nobeep
+setopt appendhistory
+setopt histignorealldups
+setopt autocd
+
+# themes
+ZSH_THEME="bira"
+
+# plugins
+plugins=(
+    git
+    dircycle
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    command-not-found
+    web-search
+)
+
+source $ZSH/oh-my-zsh.sh
+
+#==========================================================
+# OTHER CONFIGSS
+#==========================================================
+
+# basic auto tab complete
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)
+
+export LANG=en_US.UTF-8
+
+#==========================================================
+# ALIASES / SHORTCUTS
+#==========================================================
+
+# terminal
+alias cat="bat"
+alias bci="brew cask install"
+alias cl="clear"
+alias cp="cp -i"
+alias more="less"
+alias grep="grep -i --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}"
+alias reload="source ~/.zshrc"
+
+# config files
+alias zshc="vim ~/.zshrc"
+alias vimc="vim ~/.vimrc"
+
+# git
+alias gI='git init'
+alias gA="git add ."
+alias gP="git push origin master"
+alias gL="git pull origin master"
+alias gC="gcmsg"
+alias gS="git status"
+alias glog="git log --oneline --all --graph --decorate"
+alias gitu="git add . && git commit && git push"
+
+# docker
+alias diL="docker images"
+alias dvL="docker volume ls"
+alias dnL="docker network ls"
+alias dR="docker run --rm"
+alias dS="docker stop"
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias drm="docker rm"
+alias drmi="docker rmi"
+drma() { docker rm $(docker ps -aq ) }
