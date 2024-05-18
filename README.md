@@ -1,4 +1,4 @@
-# dotfiles
+# linux dotfiles
 
 ![](https://i.postimg.cc/Bv1g1Cr5/desktop.png)
 
